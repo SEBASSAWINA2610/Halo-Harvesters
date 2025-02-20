@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo Harvesters - Merch Shop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+            color: #ffffff;
+            text-align: center;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Swag Shop.png') no-repeat center center fixed;
+            background-size: cover;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+        }
+        .header a {
+            text-decoration: none;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+            border: 3px solid gold;
+            box-shadow: 0 0 15px gold;
+        }
+        .header a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 25px gold;
+            transform: scale(1.1);
+        }
+        .merch-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .merch-item {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 250px;
+            border: 4px solid gold;
+            box-shadow: 0 0 15px gold;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .merch-item:hover {
+            box-shadow: 0 0 30px gold;
+            transform: scale(1.1);
+        }
+        .merch-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .merch-item p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+        .price {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: gold;
+            text-shadow: 0 0 15px gold, 0 0 30px rgba(255, 215, 0, 0.8);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Return Home</a>
+        <a href="checkout.html">Checkout</a>
+    </div>
+    
+    <div class="merch-container">
+        <div class="merch-item">
+            <p>Halo Harvesters T-Shirt</p>
+            <img src="tshirt1.png" alt="T-Shirt">
+            <p class="price">$29.99</p>
+        </div>
+        <div class="merch-item">
+            <p>Halo Harvesters Hoodie</p>
+            <img src="hoodie.png" alt="Hoodie">
+            <p class="price">$49.99</p>
+        </div>
+        <div class="merch-item">
+            <p>Halo Harvesters Classic Tee</p>
+            <img src="tshirt2.png" alt="Classic Tee">
+            <p class="price">$29.99</p>
+        </div>
+        <div class="merch-item">
+            <p>Halo Harvesters Limited Edition Tee</p>
+            <img src="tshirt3.png" alt="Limited Tee">
+            <p class="price">$29.99</p>
+        </div>
+        <div class="merch-item">
+            <p>Halo Harvesters Polo Shirt</p>
+            <img src="polo.png" alt="Polo Shirt">
+            <p class="price">$34.99</p>
+        </div>
+    </div>
+</body>
+</html>
